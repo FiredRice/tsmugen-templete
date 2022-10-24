@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "ts-mugen 项目模板",
 	"author": "破晓雪风",
-	"homepage": "https://gitee.com/poxiaoxuefeng/tsmugen-templete",
+	"homepage": "https://github.com/FiredRice/tsmugen-templete",
 	"license": "MIT",
 	"scripts": {
 		"start": "tsmugen start",
