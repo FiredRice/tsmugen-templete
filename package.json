@@ -1,0 +1,29 @@
+{
+	"name": "tsmugen-templete",
+	"version": "1.0.0",
+	"description": "ts-mugen 项目模板",
+	"author": "破晓雪风",
+	"homepage": "https://gitee.com/poxiaoxuefeng/tsmugen-templete",
+	"license": "MIT",
+	"scripts": {
+		"start": "tsmugen start",
+		"dev": "tsmugen dev -c",
+		"dev:1.0": "tsmugen dev 1.0 -c",
+		"dev:1.1": "tsmugen dev 1.1 -c",
+		"build": "tsmugen build",
+		"build:1.0": "tsmugen build 1.0",
+		"build:1.1": "tsmugen build 1.1",
+		"clean": "tsmugen clean"
+	},
+	"devDependencies": {
+		"@types/node": "^18.8.5",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.1.0",
+		"typescript": "^4.8.3"
+	},
+	"dependencies": {
+		"@tsmugen/cli": "^1.1.0",
+		"@tsmugen/core": "^3.0.1",
+		"@tsmugen/global": "^1.0.2"
+	}
+}

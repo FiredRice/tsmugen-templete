@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"target": "ESNext",
+		"lib": [
+			"ESNext"
+		],
+		"strict": true,
+		"rootDir": "./src",
+		"sourceMap": false,
+		"inlineSources": false,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"useDefineForClassFields": false,
+		"emitDecoratorMetadata": true,
+		"forceConsistentCasingInFileNames": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"baseUrl": "./",
+		"paths": {
+			"src/*": [
+				"src/*"
+			]
+		}
+	},
+	"exclude": [
+		"lib",
+		"bin",
+		"dist",
+		"node_modules",
+		"node_modules/typescript/lib/lib.dom.d.ts"
+	],
+	"ts-node": {
+		"transpileOnly": true,
+		"require": [
+			"tsconfig-paths/register"
+		]
+	}
+}

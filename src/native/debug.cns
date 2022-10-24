@@ -1,0 +1,7 @@
+[State -2, 调试]
+type = DisplayToClipboard
+TriggerAll = !isHelper
+trigger1 = 1
+text = "Hello World!"
+; params = stateno
+ignorehitpause = 1
