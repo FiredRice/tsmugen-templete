@@ -1,4 +1,6 @@
-import { useStatedef, Null } from '@tsmugen/core';
+import { useStatedef, Null, ChangeState, And } from '@tsmugen/core';
+import { helloHelper } from 'src/helpers';
+import { getNativeCode } from 'src/utils';
 
 function letsStart() {
     useStatedef({
@@ -13,9 +15,19 @@ function letsStart() {
     getNativeCode('debug.cns');
 
     Null({
-        triggers: 1,
+        triggers: And(
+            NumHelper(helloHelper),
+            enemynear.helloHelperEnemynear.AILevel,
+            enemynear.helloHelperEnemynear.initVelY,
+            `${NumHelper(root.helloHelperRoot)} != 0`
+        ),
         describe: 'Hello World!'
     });
+
+    ChangeState({
+        triggers: time.equal(0),
+        value: 0
+    })
 }
 
 export default [letsStart];

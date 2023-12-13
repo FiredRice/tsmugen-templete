@@ -1,6 +1,7 @@
+import { CustomHelpers } from 'src/helpers';
 import { CustomVars } from '../vars';
 
-type GlobalExtend = CustomVars;
+type GlobalExtend = CustomVars & CustomHelpers;
 
 declare global {
     interface Root extends GlobalExtend { }
